@@ -2,7 +2,7 @@
 
 A simple yet powerful React app built with **Vite** that provides accurate address search, autocomplete suggestions, and address autofill using **Google Maps API**.
 
-**Author:** Lucien Chemaly
+![Address Suggestion](https://i.imgur.com/otOlINQ.png)
 
 ---
 
@@ -73,6 +73,6 @@ MIT License. Feel free to modify and distribute as needed.
 
 ---
 
-**Happy coding! 🚀**
+**Author:** Lucien Chemaly
 
-*Lucien Chemaly*
+**Happy coding! 🚀**
