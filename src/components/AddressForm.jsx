@@ -1,4 +1,3 @@
-import Papa from "papaparse";
 import React, { useState } from "react";
 import {
   TextField,
@@ -10,7 +9,6 @@ import {
   ListItemText,
   CircularProgress,
   Paper,
-  Button,
 } from "@mui/material";
 import {
   LocationOn,
@@ -25,18 +23,7 @@ import {
 } from "@mui/icons-material";
 
 // **Replace with your actual Google API Key**
-const GOOGLE_MAPS_API_KEY = "YOUR_GOOGLE_API_KEY";
-
-const verifyAddress = async (zip, city) => {
-  const response = await fetch("/GPC-STRT-GEO-SAMPLE-US.csv");
-  const csvData = await response.text();
-  const parsedData = Papa.parse(csvData, { header: true }).data;
-  return parsedData.some(
-    (entry) =>
-      entry.postcode === zip &&
-      entry.locality.toLowerCase() === city.toLowerCase()
-  );
-};
+const GOOGLE_MAPS_API_KEY = "GOOGLE_MAPS_API_KEY";
 
 const AddressSearchForm = () => {
   const [query, setQuery] = useState("");
@@ -252,23 +239,6 @@ const AddressSearchForm = () => {
             />
           </Grid>
         ))}
-        <Grid item xs={12} sm={6}>
-          <Button
-            variant="contained"
-            color="primary"
-            fullWidth
-            onClick={async () => {
-              const isValid = await verifyAddress(address.zip, address.city);
-              alert(
-                isValid
-                  ? "Address verified successfully!"
-                  : "Address verification failed."
-              );
-            }}
-          >
-            Verify Address
-          </Button>
-        </Grid>
       </Grid>
     </Box>
   );

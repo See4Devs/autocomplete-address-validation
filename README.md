@@ -1,4 +1,4 @@
-# 📍 React Address Autocomplete with Vite
+# 📍 React Address Autocomplete
 
 A simple yet powerful React app built with **Vite** that provides accurate address search, autocomplete suggestions, and address verification using **Google Maps API** and **GeoPostcodes** data.
 
@@ -48,9 +48,6 @@ http://localhost:5173
 - [Vite](https://vitejs.dev/)
 - [Material UI](https://mui.com/)
 - [Google Places API](https://developers.google.com/maps/documentation/places/web-service/overview)
-- [GeoPostcodes](https://www.geopostcodes.com/)
-- [PapaParse](https://www.papaparse.com/) for CSV parsing
-
 ---
 
 ## 🌟 Features
@@ -67,7 +64,6 @@ The main logic is encapsulated in `AddressSearchForm.jsx`:
 
 - **Fetching Suggestions:** Utilizes the Google Places API to fetch suggestions based on user input.
 - **Fetching Place Details:** Retrieves detailed address components when the user selects a suggestion.
-- **CSV-based Address Verification:** Verifies the accuracy of city and ZIP code pairs using local GeoPostcodes data.
 
 ---
 

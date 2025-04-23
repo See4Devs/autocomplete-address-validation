@@ -15,7 +15,6 @@
     "@mui/icons-material": "^6.4.7",
     "@mui/material": "^6.4.7",
     "@react-google-maps/api": "^2.20.6",
-    "papaparse": "^5.5.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
