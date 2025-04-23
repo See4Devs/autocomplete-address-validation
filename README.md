@@ -1,6 +1,6 @@
 # 📍 React Address Autocomplete
 
-A simple yet powerful React app built with **Vite** that provides accurate address search, autocomplete suggestions, and address verification using **Google Maps API** and **GeoPostcodes** data.
+A simple yet powerful React app built with **Vite** that provides accurate address search, autocomplete suggestions, and address autofill using **Google Maps API**.
 
 **Author:** Lucien Chemaly
 
